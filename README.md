@@ -1,7 +1,8 @@
 <p align="center">
-  </p>
+  <img src="https://raw.githubusercontent.com/Gargi016/InteractionNet/main/docs/interactionnet%20poster.jpeg" alt="InteractionNet Project Banner">
+</p>
 
-<h1 align="center">InteractionNet</h1>
+<h1 align="center">InteractionNet </h1>
 
 <p align="center">
   <i>An AI-Powered Prototype for Predicting Drug-Drug Interactions</i>
@@ -20,6 +21,7 @@
   <a href="#-project-overview">Overview</a> •
   <a href="#-key-features">Key Features</a> •
   <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-results--evaluation">Results & Evaluation</a> •
   <a href="#-getting-started">Getting Started</a> •
   <a href="#-the-team">The Team</a>
 </p>
@@ -45,7 +47,7 @@ Millions of patients worldwide are prescribed multiple medications (polypharmacy
 - **AI-Powered Prediction**: Utilizes a `RandomForestClassifier` to predict interaction risk based on the drugs' molecular fingerprints.
 - **Interactive 3D Molecule Viewer**: Renders the 3D structures of the selected drugs using `3Dmol.js`, offering an intuitive, educational experience.
 - **Dynamic Drug Selection**: A user-friendly interface with dropdown menus populated from the dataset, preventing errors and simplifying the user experience.
-- **Real-Time Feedback**: The frontend communicates asynchronously with the backend to provide instant "Calculating..." status and a clear, color-coded final prediction.
+- **Real-Time Feedback**: The frontend communicates asynchronously with the backend to provide instant "Analyzing..." status and a clear, color-coded final prediction.
 - **Full-Stack Architecture**: Built on a robust Python/Flask backend and a dynamic JavaScript frontend.
 
 ---
@@ -67,15 +69,15 @@ Our application provides a clean and functional prototype that successfully demo
 
 <p align="center">
   <b>Main Application Interface with Dropdowns</b><br><br>
-  <img src="URL_TO_YOUR_FIRST_SCREENSHOT" alt="A screenshot of the main application view with dropdowns." width="700">
+  <img src="https://raw.githubusercontent.com/Gargi016/InteractionNet/main/docs/drop%20down%20option.jpg" alt="A screenshot of the main application view with dropdowns." width="700">
 </p>
 <p align="center">
-  <b>A "Low Risk" Prediction with 3D Models</b><br><br>
-  <img src="URL_TO_YOUR_SECOND_SCREENSHOT" alt="A screenshot showing a successful low-risk prediction and two 3D models." width="700">
+  <b>A "Interacting" </b><br><br>
+  <img src="https://raw.githubusercontent.com/Gargi016/InteractionNet/main/docs/interacting.jpg" alt="A screenshot showing a high-risk prediction with red styling." width="700">
 </p>
 <p align="center">
-  <b>A "High Risk" Prediction with 3D Models</b><br><br>
-  <img src="URL_TO_YOUR_THIRD_SCREENSHOT" alt="A screenshot showing a high-risk prediction with red styling." width="700">
+  <b>A "Non interacting" </b><br><br>
+  <img src="https://raw.githubusercontent.com/Gargi016/InteractionNet/main/docs/non%20interacting.jpg" alt="A screenshot showing a successful low-risk prediction and two 3D models." width="700">
 </p>
 
 ---
@@ -109,7 +111,7 @@ To run this project locally:
     ```bash
     flask run
     ```
-    The app will be available at `http://127.0.0.1:5000`.
+    The app will be available at `http://12.0.0.1:5000`.
 
 ---
 
