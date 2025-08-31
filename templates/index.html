@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>muj</title>
+  <title>InteractionNet</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
@@ -28,6 +28,7 @@ html, body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  font-size:26px;
 }
 
 /* Button container */
@@ -233,7 +234,7 @@ html, body {
 </head>
 <body>
   <!-- Logo Area -->
-  <header id="logo">LOGO</header>
+  <header id="logo">InteractionNet</header>
 
   <!-- Main UI -->
   <div class="ui">
@@ -854,61 +855,22 @@ const csvText = document.getElementById("csvData").textContent.trim();
 import { OrbitControls } from "https://cdn.skypack.dev/three-stdlib@2.8.5/controls/OrbitControls";
 
 
-//const interactionMap = new Map();//nigga
+
 let done=0;
 function backend(smile1,smile2){
 
-//   if((smile1==="C[C@@H](Cc1c[nH]c2c1c1CCCOc1cc2)N"&&smile2=="OC[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@@H](O[C@@H]2C)O[C@H]2[C@@H](O)C[C@@H](O[C@@H]2C)O[C@H]2[C@@H](O)C[C@@H](O[C@@H]2C)O[C@H]2CC[C@]3([C@@H](C2)CC[C@@H]2[C@@H]3C[C@@H](O)[C@]3([C@]2(O)CC[C@@H]3C2=CC(=O)OC2)C)C)[C@@H]([C@H]([C@@H]1O)O)O"
 
-//   )||(smile2==="C[C@@H](Cc1c[nH]c2c1c1CCCOc1cc2)N"&&smile1=="OC[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@@H](O[C@@H]2C)O[C@H]2[C@@H](O)C[C@@H](O[C@@H]2C)O[C@H]2[C@@H](O)C[C@@H](O[C@@H]2C)O[C@H]2CC[C@]3([C@@H](C2)CC[C@@H]2[C@@H]3C[C@@H](O)[C@]3([C@]2(O)CC[C@@H]3C2=CC(=O)OC2)C)C)[C@@H]([C@H]([C@@H]1O)O)O"
-// )){
-//     //console.log("jo mama");
-//     statusBox.textContent = "jo mama";
-//   }
-
-  // const ritvik=Math.random()*100;
-  // if(ritvik>75){
-  //   //console.log("jo mama");
-  //   statusBox.textContent = "jo mama";
-  // }
+ 
 
 
 
-  //nigga nigga nigga
-  // normalize key (so a+b == b+a)
-  // const key = [smile1, smile2].sort().join("_");
-
-  // if (!interactionMap.has(key)) {
-  //   // decide once and store forever
-  //   const ritvik = Math.random() * 100;
-  //   interactionMap.set(key, ritvik > 75);
-  // }
-
-  // if (interactionMap.get(key)) {
-  //   statusBox.textContent = "jo mama";
-  //   console.log(smile1);
-  //   console.log(smile2);
-  // }
-
-   //nigga nigga nigga
 
 
-  //nigga nigga 
   predictInteraction();
     async function predictInteraction() {
         const drug1_smiles = smile1;
         const drug2_smiles = smile2;
-        // const resultText = document.getElementById('result-text');
-
-        // if (!drug1_smiles || !drug2_smiles) {
-        //     resultText.textContent = "Please enter both SMILES strings.";
-        //     resultText.style.color = "red";
-        //     return;
-        // }
-
-        // resultText.textContent = "Predicting...";
-        // resultText.style.color = "#0056b3";
-
+  
         try {
             const response = await fetch('/predict', {
                 method: 'POST',
@@ -932,12 +894,12 @@ function backend(smile1,smile2){
             if (probability>60) {
                 // resultText.textContent = `Predicted: INTERACTION LIKELY (${probability}%)`;
                 // resultText.style.color = "red";
-                statusBox.textContent = "jo mama";
+                statusBox.textContent = "Interacting";
               done=1;
              } 
           if (done===0) {
  
-            statusBox.textContent = "no mama";
+            statusBox.textContent = "Not Interacting";
           }
             //else {
             //     resultText.textContent = `Predicted: NO INTERACTION (${probability}%)`;
@@ -950,7 +912,7 @@ function backend(smile1,smile2){
     }
 
 
-    //nigga nigga 
+
 
 
 }
@@ -1031,7 +993,7 @@ async function addSceneWrapper(smiles = "CCO") {
   //console.log("Current list:", added);
 combs.length=0;
   done=0;
-  statusBox.textContent = "predicting..";
+  statusBox.textContent = "Calculating..";
 for (let i = 0; i < added.length; i++) {
   //console.log('');
 
@@ -1095,7 +1057,7 @@ removeBtn.addEventListener("click", () => {
   
     combs.length=0;
     done=0;
-    statusBox.textContent = "predicting..";
+    statusBox.textContent = "Calculating..";
 for (let i = 0; i < added.length; i++) {
 // console.log('');
   
