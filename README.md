@@ -32,7 +32,7 @@
 
 [![Deploy to Render](https://img.shields.io/badge/View_Live_Demo-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://interactionnet-cmmj.onrender.com)
 
-**Click the badge above or follow this link to try the live application:** [https://interactionnet-cmmj.onrender.com](https://interactionnet-cmmj.onrender.com)
+**Click the badge above or follow the link to try the live application:** [https://interactionnet-cmmj.onrender.com](https://interactionnet-cmmj.onrender.com)
 
 ---
 
