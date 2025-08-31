@@ -122,4 +122,4 @@ This project was developed by:
 - **Gargi Das**: [GitHub](https://github.com/Gargi016)
 - **Ritvik Raj Singh**: [GitHub](https://github.com/Ritviks21)
 - **Paarth Gupta**: [GitHub](https://github.com/paarthgupta-dev)
-- **Rishabh Kumar**: [GitHub](https://github.com/Rishabh-prog19)
+- **Rishabh Shrivastava**: [GitHub](https://github.com/Rishabh-prog19)
