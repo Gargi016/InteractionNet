@@ -855,7 +855,7 @@ import { OrbitControls } from "https://cdn.skypack.dev/three-stdlib@2.8.5/contro
 
 
 //const interactionMap = new Map();//nigga
-
+let done=0;
 function backend(smile1,smile2){
 
 //   if((smile1==="C[C@@H](Cc1c[nH]c2c1c1CCCOc1cc2)N"&&smile2=="OC[C@H]1O[C@@H](O[C@H]2[C@@H](O)C[C@@H](O[C@@H]2C)O[C@H]2[C@@H](O)C[C@@H](O[C@@H]2C)O[C@H]2[C@@H](O)C[C@@H](O[C@@H]2C)O[C@H]2CC[C@]3([C@@H](C2)CC[C@@H]2[C@@H]3C[C@@H](O)[C@]3([C@]2(O)CC[C@@H]3C2=CC(=O)OC2)C)C)[C@@H]([C@H]([C@@H]1O)O)O"
@@ -933,7 +933,12 @@ function backend(smile1,smile2){
                 // resultText.textContent = `Predicted: INTERACTION LIKELY (${probability}%)`;
                 // resultText.style.color = "red";
                 statusBox.textContent = "jo mama";
+              done=1;
              } 
+          if (done===0) {
+ 
+            statusBox.textContent = "no mama";
+          }
             //else {
             //     resultText.textContent = `Predicted: NO INTERACTION (${probability}%)`;
             //     resultText.style.color = "green";
@@ -1025,7 +1030,8 @@ async function addSceneWrapper(smiles = "CCO") {
   added = added.filter(item => item !== "CCO");
   //console.log("Current list:", added);
 combs.length=0;
-  statusBox.textContent = "no mama";
+  done=0;
+  statusBox.textContent = "predicting..";
 for (let i = 0; i < added.length; i++) {
   //console.log('');
 
@@ -1086,8 +1092,10 @@ removeBtn.addEventListener("click", () => {
     //console.log("After deletion:", added);
 
     //added = ["a","b","c","d"];
+  
     combs.length=0;
-    statusBox.textContent = "no mama";
+    done=0;
+    statusBox.textContent = "predicting..";
 for (let i = 0; i < added.length; i++) {
 // console.log('');
   
