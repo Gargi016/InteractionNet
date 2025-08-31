@@ -45,7 +45,7 @@ Millions of patients worldwide are prescribed multiple medications (polypharmacy
 ## ✨ Key Features
 
 - **AI-Powered Prediction**: Utilizes a `RandomForestClassifier` to predict interaction risk based on the drugs' molecular fingerprints.
-- **Interactive 3D Molecule Viewer**: Renders the 3D structures of the selected drugs using `3Dmol.js`, offering an intuitive, educational experience.
+- **Interactive 3D Molecule Viewer**: Renders the 3D structures of the selected drugs, offering an intuitive and educational experience.
 - **Dynamic Drug Selection**: A user-friendly interface with dropdown menus populated from the dataset, preventing errors and simplifying the user experience.
 - **Real-Time Feedback**: The frontend communicates asynchronously with the backend to provide instant "Analyzing..." status and a clear, color-coded final prediction.
 - **Full-Stack Architecture**: Built on a robust Python/Flask backend and a dynamic JavaScript frontend.
